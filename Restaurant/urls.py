@@ -1,5 +1,5 @@
 """
-URL configuration for LittleLemon project.
+URL configuration for Restaurant project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -19,7 +19,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('LittleLemonAPI.urls')),
+    path('api/', include('RestaurantAPI.urls')),
     path('api/users/', include('djoser.urls')),
     path('api/users/', include('djoser.urls.jwt')),
 ]
